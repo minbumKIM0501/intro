@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+.hide {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+.wrap {
+  width: 100%;
+}
+.headerwrap {
+  width: 100%;
+}
+header {
+  width: 100%;
+  background-color: #efefef;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1625px;
+  margin: 0 auto;
+}
+nav > ul {
+  display: flex;
+  margin: 45px;
+}
+nav > ul > li {
+  margin: 0 15px;
+}
+nav > ul > li > a {
+  font-size: 18px;
+  color: #111111;
+}
+nav > ul > li > a:hover {
+  color: red;
+}
+/* main */
+footer > #back01 {
+  /*   position:fixed; */
+  width: 100%;
+  height: 90vh;
+  /*   left: 0; top: 0; */
+  background: url("../img/View-Earth-from-the-space-planet_1920x1080.jpg")
+    repeat-x;
+  z-index: -100;
+}
+footer > #back02 {
+  /*   position:fixed; */
+  width: 100%;
+  height: 90vh;
+  /*   left: 0; top: 0; */
+  background: url("../img/afternoon.jpg") repeat-x;
+  display: none;
+}
+article {
+  position: fixed;
+  right: 80px;
+  bottom: 500px;
+  width: 772px;
+  height: 370px;
+  background: url("../img/time_03.png") no-repeat right;
+  z-index: 9999;
+}
+.main {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* dl > dt,
+dl > dd {
+  display: inline-block;
+} */
+dl > dd > em {
+  font-style: normal;
+  padding: 0 10px;
+}
+dl > dd > .min {
+  margin: 0 20px 0 20px;
+}
+
+#day01 {
+  margin-bottom: 20px;
+}
+#day01 > dl {
+  box-sizing: border-box;
+  font-family: "Jua", sans-serif;
+  font-size: 26px;
+  color: #efefef;
+  text-align: center;
+  margin-left: 435px;
+  margin-top: 75px;
+  display: flex;
+}
+#day02 > dl {
+  font-family: "Jua", sans-serif;
+  font-size: 50px;
+  color: #efefef;
+  position: absolute;
+  right: 40px;
+  margin-top: -10px;
+  display: flex;
+}
+.men > h4 > img {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+.space > h3 > img {
+  position: absolute;
+  left: 70px;
+  top: 150px;
+  animation: kim 2s ease-in infinite alternate,
+    opacity 3s ease-out infinite alternate;
+}
+.space_01 {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+}
+.space_01 > h4 {
+  margin: 150px 0;
+}
+.space_01 > h4:nth-child(2) {
+  margin: 145px 390px;
+}
+.space_01 > h4 > img {
+  margin: 0 150px 0;
+  animation: rotate 4.5s ease-in infinite alternate,
+    opacity 3s ease-in-out infinite alternate;
+}
+.space_01 > h4:nth-child(2) > img {
+  margin: 30px 160px;
+  animation: scale 2s ease-in infinite alternate,
+    opacity 4s ease-in-out infinite alternate;
+}
+/* aside */
+#sub {
+  position: fixed;
+  left: 42px;
+  top: 380px;
+}
+#sub > ul {
+  display: flex;
+  flex-direction: column;
+}
+#sub > ul > li {
+  margin: 50px 10px;
+  width: 155px;
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 15px;
+}
+#sub > ul > li > a {
+  display: block;
+  width: 100%;
+  font-family: "Jua", sans-serif;
+  font-size: 25px;
+  color: #111111;
+  line-height: 40px;
+}
+#sub > ul > li:hover {
+  background: url("../img/hover.png");
+}
+#sub > ul > li > a:hover {
+  color: #efefef;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #efefef;
+  text-align: center;
+}
+footer > small {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  color: #111111;
+  line-height: 50px;
+}
+@keyframes kim {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.7;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(150deg);
+  }
+  100% {
+    transform: rotate(250deg);
+  }
+}
