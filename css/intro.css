@@ -47,6 +47,7 @@ footer > #back01 {
   /*   left: 0; top: 0; */
   background: url("../img/View-Earth-from-the-space-planet_1920x1080.jpg")
     repeat-x;
+  background-size: cover;
   z-index: -100;
 }
 footer > #back02 {
@@ -55,6 +56,7 @@ footer > #back02 {
   height: 90vh;
   /*   left: 0; top: 0; */
   background: url("../img/afternoon.jpg") repeat-x;
+  background-size: cover;
   display: none;
 }
 article {
